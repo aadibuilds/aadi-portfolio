@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadi | Aspiring Developer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #0a0a14;
+    color: #e8e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .glow {
+    position: fixed; top: -200px; left: 50%; transform: translateX(-50%);
+    width: 700px; height: 700px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(99,102,241,.25), rgba(168,85,247,.12), transparent 70%);
+    pointer-events: none; z-index: 0;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+  header { text-align: center; padding: 100px 0 60px; }
+  .avatar {
+    width: 130px; height: 130px; border-radius: 50%; margin: 0 auto 28px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 64px; font-weight: 800; color: #fff;
+    box-shadow: 0 0 60px rgba(139,92,246,.5);
+  }
+  h1 { font-size: 3rem; margin-bottom: 12px; }
+  h1 .grad {
+    background: linear-gradient(90deg, #818cf8, #c084fc);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .tagline { font-size: 1.2rem; color: #a5a5c0; margin-bottom: 32px; }
+  .btn {
+    display: inline-block; padding: 14px 36px; border-radius: 999px;
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    color: #fff; text-decoration: none; font-weight: 600; font-size: 1rem;
+    box-shadow: 0 4px 24px rgba(139,92,246,.4);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(139,92,246,.6); }
+  section { padding: 48px 0; }
+  h2 { font-size: 1.8rem; margin-bottom: 24px; text-align: center; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .card {
+    background: rgba(255,255,255,.04); border: 1px solid rgba(139,92,246,.25);
+    border-radius: 16px; padding: 28px 24px; text-align: center;
+    transition: transform .2s, border-color .2s;
+  }
+  .card:hover { transform: translateY(-4px); border-color: rgba(139,92,246,.6); }
+  .card .icon { font-size: 2.4rem; margin-bottom: 12px; }
+  .card h3 { margin-bottom: 8px; font-size: 1.1rem; }
+  .card p { color: #a5a5c0; font-size: .95rem; line-height: 1.5; }
+  footer { text-align: center; padding: 48px 0 64px; color: #71718c; font-size: .9rem; }
+  footer a { color: #a78bfa; text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="container">
+    <header>
+      <div class="avatar">A</div>
+      <h1>Hi, I'm <span class="grad">Aadi</span> 👋</h1>
+      <p class="tagline">Aspiring developer · Android enthusiast · Open-source explorer</p>
+      <a class="btn" href="https://github.com/aadibuilds" target="_blank">My GitHub</a>
+    </header>
+
+    <section>
+      <h2>🛠️ What I'm into</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🤖</div>
+          <h3>Android Customization</h3>
+          <p>Rooting, Magisk modules, and pushing devices to their limits.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>Building modern, fast websites — like this one, hosted free on GitHub Pages.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📦</div>
+          <h3>Open Source</h3>
+          <p>Exploring, learning from, and contributing to open-source projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🚀 Currently</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">📚</div>
+          <h3>Learning</h3>
+          <p>Sharpening my skills one project at a time.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💡</div>
+          <h3>Building</h3>
+          <p>Turning ideas into real, working things.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built with 💜 by <a href="https://github.com/aadibuilds">Aadi</a> · Hosted free on GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
